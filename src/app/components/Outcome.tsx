@@ -27,6 +27,7 @@ export default function Outcome() {
         <VStack mt="10">
           <Stack>
             <Text
+              fontSize={{ base: "sm", md: "lg" }}
               as={"a"}
               color="blue"
               fontFamily={"sans-serif"}
@@ -37,6 +38,7 @@ export default function Outcome() {
               tech industry
             </Text>
             <Text
+              fontSize={{ base: "sm", md: "lg" }}
               as={"a"}
               color="blue"
               fontFamily={"sans-serif"}
@@ -47,6 +49,7 @@ export default function Outcome() {
               2. Blockchain Developer Salary - Jun 2022
             </Text>
             <Text
+              fontSize={{ base: "sm", md: "lg" }}
               as={"a"}
               color="blue"
               fontFamily={"sans-serif"}
@@ -56,6 +59,7 @@ export default function Outcome() {
               3. Web3 Salaries Soar to $750,000 for Rank-and-File Devs
             </Text>
             <Text
+              fontSize={{ base: "sm", md: "lg" }}
               as={"a"}
               color="blue"
               fontFamily={"sans-serif"}
@@ -66,6 +70,7 @@ export default function Outcome() {
               Internet&apos;s Uncharted Waters
             </Text>
             <Text
+              fontSize={{ base: "sm", md: "lg" }}
               as={"a"}
               color="blue"
               fontFamily={"sans-serif"}

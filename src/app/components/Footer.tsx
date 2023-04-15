@@ -32,8 +32,8 @@ const SocialButton = ({
     <chakra.button
       bg={useColorModeValue("blackAlpha.100", "whiteAlpha.100")}
       rounded={"lg"}
-      w={"2.3rem"}
-      h={"2.3rem"}
+      w={{ base: "1.7rem", md: "2.3rem" }}
+      h={{ base: "1.7rem", md: "2.3rem" }}
       cursor={"pointer"}
       as={"a"}
       href={href}
@@ -81,7 +81,7 @@ export default function Footer() {
               height="100"
             />
           </a>
-          <Text textAlign={"center"}>© 2023 Panaverse DAO. All rights reserved</Text>
+          <Text textAlign={"center"} fontSize={{base:"xs", md:"lg"}}>© 2023 Panaverse DAO. All rights reserved</Text>
           <Stack direction={"row"} spacing={{base:"3", md:"5"}}>
             <SocialButton
               label={"Facebook"}

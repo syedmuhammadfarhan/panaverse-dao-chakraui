@@ -33,20 +33,22 @@ export default function Hero() {
               fontWeight={900}
               lineHeight={1.2}
               fontSize={useBreakpointValue({
-                base: "3xl",
-                md: "4xl",
-                // lg: "4xl",
+                base: "xl",
+                md: "3xl",
+                lg: "4xl",
               })}
               borderWidth="10"
+              textAlign={"center"}
             >
               Certified Web 3.0 and Metaverse Developer
             </Text>
             <Text
               width={"auto"}
-              color={"red.400"}
+              color={"red.500"}
               fontWeight={500}
               lineHeight={1}
-              fontSize={useBreakpointValue({ base: "lg", md: "xl" })}
+              fontSize={useBreakpointValue({ base: "sm", md: "lg" })}
+              textAlign="center"
             >
               A One and Quarter Years Panaverse DAO Earn as you Learn Program
             </Text>
@@ -59,6 +61,7 @@ export default function Hero() {
                 color={"white"}
                 _hover={{ bg: "teal.500" }}
                 href={"https://portal.piaic.org/signup"}
+                fontSize={"xs"}
               >
                 Get Enrolled
               </Button>

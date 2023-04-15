@@ -23,13 +23,13 @@ const Quarter = ({ children }: { children: ReactNode }) => {
 const QuarterContent = ({ children }: { children: ReactNode }) => {
   return (
     <Stack
-      h={"10rem"}
+      h={"13rem"}
       justifyContent={"center"}
       bgGradient={"linear(to-t, red.500, transparent)"}
       boxShadow={"dark-lg"}
-      p={8}
+      p={4}
       rounded={"xl"}
-      align={"center"}
+      textAlign={"center"}
       pos={"relative"}
     >
       {children}
@@ -39,7 +39,7 @@ const QuarterContent = ({ children }: { children: ReactNode }) => {
 
 const QuarterHeading = ({ children }: { children: ReactNode }) => {
   return (
-    <Heading as={"h3"} fontSize={"xl"}>
+    <Heading as={"h3"} fontSize={{ base: "xs", md: "md" }}>
       {children}
     </Heading>
   );
@@ -47,7 +47,11 @@ const QuarterHeading = ({ children }: { children: ReactNode }) => {
 
 const QuarterText = ({ children }: { children: ReactNode }) => {
   return (
-    <Text textAlign={"center"} color={"white"} fontSize={"sm"}>
+    <Text
+      textAlign={"center"}
+      color={"white"}
+      fontSize={{ base: "xs", md: "sm" }}
+    >
       {children}
     </Text>
   );
@@ -59,12 +63,12 @@ export default function Page() {
       <VStack>
         <VStack
           maxW={"80%"}
-          p={"10rem"}
+          p={{ base: "1rem", md: "10rem" }}
           bgGradient={"linear(to-t, red.500, transparent)"}
           gap={"1rem"}
           w={"100%"}
         >
-          <Heading textAlign={"center"}>
+          <Heading textAlign={"center"} pt="8">
             Cloud-Native Computing Specialization
           </Heading>
           <Text textAlign={"center"} color="white">
@@ -84,24 +88,31 @@ export default function Page() {
             color="black"
             target="_blank"
             href="https://docs.google.com/document/d/13Z4tMKQmZpMEsOc1Y_qAXbOstRolGIFupHxQFgAFl98/edit"
-            fontSize={"sm"}
+            fontSize={{ base: "xs", md: "sm" }}
             fontWeight={"bold"}
+            textAlign={"center"}
           >
-            For Detailed Syllabus Click Here
+            For Detailed Syllabus
+            <br />
+            Click Here
           </Center>
         </VStack>
       </VStack>
       <VStack>
         <Box w={"100%"} maxW={"80%"} bg="gray.100" pb={"6rem"}>
           <Box mb={"2rem"}>
-            <Heading textAlign={"center"} mt={"4rem"}>
+            <Heading textAlign={"center"} mt={"4rem"} px={{ base: "1rem" }}>
               Program Structure
             </Heading>
-            <Center textAlign={"center"} px={"10rem"} mt={"1rem"}>
+            <Center
+              textAlign={"center"}
+              px={{ base: "4rem", md: "10rem" }}
+              mt={"1rem"}
+            >
               We will start the program by learning the fundamentals of
               Object-Oriented programming using JavaScript and TypeScript.
             </Center>
-            <Center textAlign={"center"} px={"10rem"}>
+            <Center textAlign={"center"} px={{ base: "1rem", md: "10rem" }}>
               After completing the first three quarters the participants will
               select one or more specializations consisting of two courses each.
             </Center>

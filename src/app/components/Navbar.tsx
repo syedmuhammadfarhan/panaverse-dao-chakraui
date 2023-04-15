@@ -34,7 +34,7 @@ export default function Navbar() {
         <Flex
           bg={useColorModeValue("white", "gray.800")}
           color={useColorModeValue("gray.600", "white")}
-          minH={"60px"}
+          minH={"40px"}
           py={{ base: 2 }}
           px={{ base: 4 }}
           align={"center"}
@@ -216,7 +216,7 @@ const MobileNavItem = ({ label, children, href }: NavItem) => {
   const { isOpen, onToggle } = useDisclosure();
 
   return (
-    <Stack spacing={4} onClick={children && onToggle}>
+    <Stack spacing={4} mt={8} onClick={children && onToggle}>
       <Flex
         py={2}
         as={Link}
